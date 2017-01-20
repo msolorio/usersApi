@@ -1,5 +1,10 @@
 // get the packages we need
 const express = require('express');
+const mongoose = require('mongoose');
+const User = require('./models/user');
+
+// connect to our database
+mongoose.connect('mongodb://localhost:27017/users2');
 
 // create our application
 const app = express();
